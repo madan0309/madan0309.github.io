@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Madan Mohan Portfolio</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="portfolio.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC" rel="stylesheet">
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	</head>
+<body>
+	<nav>
+	<div class="top-bar-left">
+		MADAN MOHAN KURUBA
+	</div>
+	<div class="top-bar-right">
+		<ul class="nav-bar-right">
+			<li>
+				<a href="#about" class="info">About</a>
+			</li>
+			<li>
+				<a href="#skills" class="info">Skills</a>
+			</li>
+			<li>
+				<a href="#projects" class="info">Projects</a>
+			</li>
+			<li>
+				<a href="#achievements" class="info">Achievements</a>
+			</li>
+			<li>
+				<a href="#contact" class="info">Contact</a>
+			</li>
+		<ul>
+	</div>
+	</nav>
+	
+	<div id="about">
+		<h2>Here I need to include the Introduction</h2>
+		<p class="intro">
+			Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python.
+		</p>
+	</div>
+	<div id="skills">
+		<h2>Here I need to include the Skills</h2>
+		<p>
+			The whole introduction goes here.
+		</p>
+	</div>
+	<div id="projects">
+		<h2>PROJECTS</h2>
+		<div class="project-icon">
+			<img src="raspberry-pi-logo.png" id="raspberry" class="pro rasp">
+				<p id="raspberry-info">RFID Based Security System using Raspberry-Pi
+				The Objective of this project is to implement access control security system using RFID technology. 
+				Programmed the tiny computer, Raspberry-Pi to integrate with RFID and door latch. 
+				Developed programs to email user login alert to the server.
+				</p>
+			</img>
+		</div>
+		<div class="project-icon">
+			<img src="twittersentiment.png" id="twitter-sentiment" class="pro twitter">
+		</div>
+		<div class="project-icon">
+			<img src="django.png" id="django" class="pro django">
+		</div>
+		<div class="project-icon">
+			<img src="accident-detection.png" id="accident-detection" class="pro accident-detection">
+		</div>
+		<div class="project-icon">
+			<img src="gesture-gaming.png" id="gesture-gaming" class="pro gesture">
+		</div>
+		<p class="pro-info">
+			Project Information goes here :)
+		</p>
+	</div>
+	
+	
+	<div id="achievements">
+		<h2>Here I need to include the Achievements</h2>
+		<p class="awards">
+			University Graduate Scholarship by The University of Cincinnati, 2017
+Achieved Wipro Toppers Award 2015 during a 4 months training program. The training includes Datacom, TCL-TK, Unix and Networking Technologies.
+The Best Outgoing Student Award, 2009
+		</p>
+	</div>
+	<div id="contact">
+		<h2>Here I need to include the Contact</h2>
+		<p>
+			The whole introduction goes here.
+		</p>
+	</div>
+	
+	
+	<footer>
+		<div class='footer-right'>
+		<ul class="social">
+			<li class="github">
+				<a href="https://github.com/madan0309">
+				<i class="fa fa-github fa-2x"></i>
+				</a>
+			</li>
+			<li class="linkedIn">
+				<a href="https://github.com/madan0309">
+				<i class="fa fa-2x fa-linkedin"></i>
+				</a>
+			</li>
+			<li class="twitter">
+				<a href="https://www.facebook.com/madan.mohan.7927408">
+				<i class="fa fa-2x fa-twitter"></i>
+				</a>
+			</li>
+			<li class="facebook">
+				<a href="https://www.facebook.com/madan.mohan.7927408">
+				<i class="fa fa-2x fa-facebook"></i>
+				</a>
+			</li>
+		</ul>
+		<div>
+		<p class="social-message">Please visit my social websites</p>
+	</footer>
+	
+	
+	
+	<script type="text/javascript">
+	$('.pro').hover(
+	function(e){
+		if($(e.target).hasClass('rasp')){
+			$('.pro-info').html("Hovered on project one This is my Internship Project The Objective of this project is to implement access control security system using RFID technology. Programmed the tiny computer, Raspberry-Pi to integrate with RFID and door latch. Developed programs to email user login alert to the server.");
+			$('.pro-info').show(1500, "linear");
+			$('.pro-info').css({left: '450px', top: '200px'});
+		}else if($(e.target).hasClass('twitter')){
+			$('.pro-info').html("Natural Language Processing and Machine Learning project that understands the opinions, and sentiments people are communicating about world topics, application of which can improve marketing strategy, campaign success and customer service. http://alt.qcri.org/semeval2016/task4/");
+			$('.pro-info').show(1500, "swing");
+			$('.pro-info').css({left: '350px', top: '450px'});
+		}else if($(e.target).hasClass('django')){
+			$('.pro-info').html("This is a simple web-application developed using Django Python tool.");
+			$('.pro-info').show(1500, "swing");
+			$('.pro-info').css({left: '250px', top: '200px'});
+		}else if($(e.target).hasClass('accident-detection')){
+			$('.pro-info').html("This system is designed to save human-life due to the increasing road accidents. Programmed Microcontroller to enable intelligent detection of an accident and reporting the location to the user so that quick safety measures can be taken.");
+			$('.pro-info').show(1500, "swing");
+			$('.pro-info').css({left: '450px', top: '450px'});
+		}else if($(e.target).hasClass('gesture')){
+			$('.pro-info').html("Developed algorithms facilitating to play games using gestures only, without using mouse or keyboard. Image Processing Algorithms are implemented to track user’s hand or body gestures and to perform mouse, keyboard actions");
+			$('.pro-info').show(1500, "swing");
+			$('.pro-info').css({left: '350px', top: '150px'});
+		}
+	},
+	function(e){
+		$('.pro-info').hide(1500, "swing");
+	})
+	</script>
+</body>
+</html>
