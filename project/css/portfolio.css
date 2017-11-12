@@ -1,9 +1,7 @@
 body {
 	background-color : #fff;
 	font-family : "Roboto", "Tondo", Arial, "Helvetica Neue", Helvetica, sans-serif;
-	margin : 0px; 
-	height : 1000px;
-	color : #4b504e
+	margin : 0px; height : 1000px; color : #4b504e;
 }
 nav {
 	position : fixed;
@@ -21,7 +19,7 @@ nav {
 }
 .top-bar-right {
 	float : right;
-	width : 600px;
+	width : 700px;
 	padding : 0px;
 }
 
@@ -38,13 +36,15 @@ nav {
 }
 
 h2 {
-	font-family : "Roboto"; margin : 5px auto; width : 100%;
-	color : #26b67c; letter-spacing : 1.2px; text-align: center;
+	font-family : 'Playfair+Display', serif; margin : 5px auto; width : 100%;
+	color : #000000; text-align: center; text-transform:uppercase; font-size : 40px; line-height : 1.125em;
 	margin-bottom : 50px; padding-top : 20px;
+	font-weight : normal; font-stretch : normal; background : transparent;
 }
-#about, #skills, #projects, #achievements, #contact {
+#about, #skills, #projects, #achievements, #contact, #experience {
 	height : 750px; width : 100%; margin-top : 60px;
-	background-color : #fff; padding-top: 50px;
+	padding-top: 50px;
+	background : transparent;
 }
 
 #projects div {

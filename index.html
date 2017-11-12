@@ -4,7 +4,7 @@
 		<title>Madan Mohan Portfolio</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="project/css/portfolio.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC|Playfair+Display" rel="stylesheet">
 		<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -19,6 +19,9 @@
 		<ul class="nav-bar-right">
 			<li>
 				<a href="#about" class="info">About</a>
+			</li>
+			<li>
+				<a href="#experience" class="info">Experience</a>
 			</li>
 			<li>
 				<a href="#skills" class="info">Skills</a>
@@ -37,7 +40,7 @@
 	</nav>
 	
 	<div id="about">
-		<h2>Here I need to include the Introduction</h2>
+		<h2>INTRODUCTION</h2>
 		<p class="intro">
 			Graduating in Computer Science at the University of Cincinnati.
 Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
@@ -46,8 +49,23 @@ Exposure to Web-development in Django, Python. Graduating in Computer Science at
 Exposure to Web-development in Django, Python.
 		</p>
 	</div>
+	<div id="experience">
+		<h2>WORK EXPERIENCE</h2>
+		<div style="">
+			<img style="height:500px; width:75%; margin:0% 12.5%" src="project/images/experience.png">
+		</div>
+		<div style="width:75%; margin:0% 12.5%">
+			<p style="text-align: justify; line-height:1.5em">
+				Graduating in Computer Science at the University of Cincinnati. 
+I have 2 years of industrial experience working with Wipro Technologies, expertized in automation (GUI & REST API) 
+Achieved Toppers Award, 2015 during my 4 months training program at Wipro, Kolkata.
+Exposure to Web-development in Django, Python.
+Skills: Python, Selenium, Django, Core Java, Docker, Jenkins, and Gerrit.
+			</p>
+		</div>
+	</div>
 	<div id="skills">
-		<h2>Here I need to include the Skills</h2>
+		<h2>MY SKILLS</h2>
 		<p>
 			The whole introduction goes here.
 		</p>
@@ -82,18 +100,36 @@ Exposure to Web-development in Django, Python.
 	
 	
 	<div id="achievements">
-		<h2>Here I need to include the Achievements</h2>
-		<p class="awards">
-			University Graduate Scholarship by The University of Cincinnati, 2017
-Achieved Wipro Toppers Award 2015 during a 4 months training program. The training includes Datacom, TCL-TK, Unix and Networking Technologies.
-The Best Outgoing Student Award, 2009
-		</p>
+		<h2>ACHIEVEMENTS</h2>
+		<div style="text-align: center; line-height:2em">
+			<p>
+				University Graduate Scholarship by The University of Cincinnati, 2017
+			</p>
+			<p>
+				Achieved Wipro Toppers Award 2015 during a 4 months training program. The training includes Datacom, TCL-TK, Unix and Networking Technologies
+			</p>
+			<p>
+				The Best Outgoing Student Award, 2009 
+			</p>
+		</div>
 	</div>
 	<div id="contact">
-		<h2>Here I need to include the Contact</h2>
-		<p>
-			The whole introduction goes here.
-		</p>
+		<h2>CONTACT ME</h2>
+		<div style="text-align: center; line-height:2em">
+			<div class="address">
+				<p class="contact-address">
+					3227 Bishop Street<br>
+					Cincinnati, Ohio 45220<br>
+					USA<br><br>
+				</p>
+			</div>
+			<div class="contact-email">
+				<i>madan0309@gmail.com</i><br>
+			</div>
+			<div class="contact-mobile">
+				<i>+1 513-629-0622</i>
+			</div>
+		</div>
 	</div>
 	
 	
@@ -130,6 +166,7 @@ The Best Outgoing Student Award, 2009
 	<script type="text/javascript">
 	$('.pro').hover(
 	function(e){
+		$('.pro-info').hide();
 		if($(e.target).hasClass('rasp')){
 			$('.pro-info').html("Hovered on project one This is my Internship Project The Objective of this project is to implement access control security system using RFID technology. Programmed the tiny computer, Raspberry-Pi to integrate with RFID and door latch. Developed programs to email user login alert to the server.");
 			$('.pro-info').show(1500, "linear");
@@ -153,7 +190,7 @@ The Best Outgoing Student Award, 2009
 		}
 	},
 	function(e){
-		$('.pro-info').hide(1500, "swing");
+		$('.pro-info').hide(0, "swing");
 	})
 	</script>
 </body>
