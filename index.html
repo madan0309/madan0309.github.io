@@ -4,7 +4,7 @@
 		<title>Madan Mohan Portfolio</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="project/css/portfolio.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC|Playfair+Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC|Playfair+Display|Source+Sans+Pro" rel="stylesheet">
 		<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -41,6 +41,18 @@
 	
 	<div id="about">
 		<h2>INTRODUCTION</h2>
+		<div style="position:relative;">
+			<img style="height:600px; width:100%; margin:0% 0%; opacity:1;"src="project/images/intro.png";>
+			<div class="intro" style="position:absolute; left:0px; bottom:0px;
+			font-size : 20px; text-align:justify; color:#eee; font-weight:normal;
+			">Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
+Exposure to Web-development in Django, Python.
+			</div>
+		</div>
+		<div>
 		<p class="intro">
 			Graduating in Computer Science at the University of Cincinnati.
 Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
@@ -48,6 +60,7 @@ Exposure to Web-development in Django, Python. Graduating in Computer Science at
 Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
 Exposure to Web-development in Django, Python.
 		</p>
+		</div>
 	</div>
 	<div id="experience">
 		<h2>WORK EXPERIENCE</h2>
@@ -64,61 +77,174 @@ Skills: Python, Selenium, Django, Core Java, Docker, Jenkins, and Gerrit.
 			</p>
 		</div>
 	</div>
-	<div id="skills">
-		<h2>MY SKILLS</h2>
-		<p>
-			The whole introduction goes here.
-		</p>
+	<div id="skills" style="line-height:2em; margin : 0px 175px 25px 175px; font-size:20px; text-align:justify;">
+		<h2>SKILLS</h2>
+		<table style="">
+			<tr>
+				<td style="margin-right:50px"><i>Programming Languages : </i></td>
+				<td><p>Python, Java, C, Unix, Tcl/Tk, Embedded C</p></td>
+			</tr>
+			<tr>
+				<td><i>Software Tools :</i></td>
+				<td><p>MATLAB, Selenium, TestNG, Jenkins, Gerrit, Docker, Jira</p></td>
+			</tr>
+			<tr>
+				<td><i>Web Technologies :</i></td>
+				<td><p>Django, HTML, CSS, JavaScript, NoSQL</p></td>
+			</tr>
+			<tr>
+				<td><i>Operating Systems :</i></td>
+				<td><p>Windows, Unix (Linux, Fedora, CentOS, Red Hat)</p></td>
+			</tr>	
+		</table>
+		
 	</div>
 	<div id="projects">
 		<h2>PROJECTS</h2>
-		<div class="project-icon">
-			<img src="project/images/raspberry-pi-logo.png" id="raspberry" class="pro rasp">
-				<p id="raspberry-info">RFID Based Security System using Raspberry-Pi
-				The Objective of this project is to implement access control security system using RFID technology. 
-				Programmed the tiny computer, Raspberry-Pi to integrate with RFID and door latch. 
-				Developed programs to email user login alert to the server.
+		<div class="project-block">
+			<div class="project-block-inside">
+				<pubtit>Sentiment Analysis in Twitter</pubtit>
+				<p>
+					<img src="project/images/twittersentiment.png" class="img-responsive" width="150px" style="float:left">
 				</p>
-			</img>
+				<p>Natural Language Processing and Machine Learning project that understands the opinions, 
+				and sentiments people are communicating about world topics, application of which can improve marketing strategy, 
+				campaign success and customer service. http://alt.qcri.org/semeval2016/task4/
+				</p>
+				<p>
+					<em>Tools : Python, Scikit</em>
+				</p>
+				<p>University of Cincinnati, Ohio</p>
+				<p>
+					<a href="" style="text-decoration:none">report </a>
+					/
+					<a href="https://github.com/madan0309/Tweet_Sensors" style="text-decoration:none"> code (github)</a>
+				</p>
+				
+			</div>
 		</div>
-		<div class="project-icon">
-			<img src="project/images/twittersentiment.png" id="twitter-sentiment" class="pro twitter">
+		
+		<div class="project-block">
+			<div class="project-block-inside">
+				<pubtit>Basic Web Blog in Django</pubtit>
+				<p>
+					<img src="project/images/django.png" class="img-responsive" width="150px" style="float:left">
+				</p>
+				<p>Basic web-application using MVC methodology of Python 
+				Django web-framework with creating user, creating posts and retrieving posts functionalities.
+				</p>
+				<p>
+					<em>Tools : Python, Django, HTML</em>
+				</p>
+				<p>University of Cincinnati</p>
+				<p>
+					<a href="" style="text-decoration:none">report </a>
+					/
+					<a href="https://github.com/madan0309/Django" style="text-decoration:none"> code (github)</a>
+				</p>
+				
+			</div>
 		</div>
-		<div class="project-icon">
-			<img src="project/images/django.png" id="django" class="pro django">
+		
+		<div class="project-block">
+			<div class="project-block-inside">
+				<pubtit>Accident Detection and Reporting System</pubtit>
+				<p>
+					<img src="project/images/accident-detection.png" class="img-responsive" width="150px" style="float:left">
+				</p>
+				<p>This system is designed to save human-life due to the increasing road accidents. 
+				Programmed Microcontroller to enable intelligent detection of an accident 
+				and reporting the location to the user so that quick safety measures can be taken
+				</p>
+				<p>
+					<em>Tools : Embedded C, Atmega16, GSM, GPS, Accelerometer</em>
+				</p>
+				<p>Rajiv Gandhi University of Knowledge Technologies, RKValley</p>
+				<p>
+					<a href="" style="text-decoration:none">report </a>
+					/
+					<a href="" style="text-decoration:none"> code (github)</a>
+				</p>
+			</div>
 		</div>
-		<div class="project-icon">
-			<img src="project/images/accident-detection.png" id="accident-detection" class="pro accident-detection">
+		
+		<div class="project-block">
+			<div class="project-block-inside">
+				<pubtit>RFID Based Security System using Raspberry-Pi</pubtit>
+				<p>
+					<img src="project/images/raspberry-pi-logo.png" class="img-responsive" width="150px" style="float:left">
+				</p>
+				<p>The Objective of this project is to implement access control security system using RFID technology. 
+				Programmed the tiny computer, Raspberry-Pi to integrate with RFID and door latch. 
+				Developed programs to email user login alert to the server
+				</p>
+				<p>
+					<em>Tools : Python, RFID, Raspberry-Pi</em>
+				</p>
+				<p>Relgo Networks Pvt Ltd</p>
+				<p>
+					<a href="" style="text-decoration:none">report </a>
+					/
+					<a href="" style="text-decoration:none"> code (github)</a>
+				</p>
+				
+			</div>
 		</div>
-		<div class="project-icon">
-			<img src="project/images/gesture-gaming.png" id="gesture-gaming" class="pro gesture">
+		
+		<div class="project-block">
+			<div class="project-block-inside">
+				<pubtit>Gesture Game Development</pubtit>
+				<p>
+					<img src="project/images/gesture-gaming.png" class="img-responsive" width="150px" style="float:left">
+				</p>
+				<p>Developed algorithms facilitating to play games using gestures only, 
+				without using mouse or keyboard. Image Processing Algorithms are 
+				implemented to track user’s hand or body gestures and to perform mouse, keyboard actions.
+				</p>
+				<p>
+					<em>Tools : MATLAB, Image Processing</em>
+				</p>
+				<p>Rajiv Gandhi University of Knowledge Technologies, RKValley</p>
+				<p>
+					<a href="" style="text-decoration:none">report </a>
+					/
+					<a href="https://github.com/madan0309/Tweet_Sensors" style="text-decoration:none"> code (github)</a>
+				</p>
+				
+			</div>
 		</div>
-		<p class="pro-info">
-			Project Information goes here :)
-		</p>
 	</div>
 	
 	
 	<div id="achievements">
-		<h2>ACHIEVEMENTS</h2>
-		<div style="text-align: center; line-height:2em">
+		<h2>ACTIVITIES & AWARDS</h2>
+		<div style="line-height:2em; margin : 0px 175px 25px 175px; font-size:20px; text-align:justify;">
+			<i>@Awards</i>
 			<p>
 				University Graduate Scholarship by The University of Cincinnati, 2017
 			</p>
 			<p>
-				Achieved Wipro Toppers Award 2015 during a 4 months training program. The training includes Datacom, TCL-TK, Unix and Networking Technologies
+				Achieved Wipro Toppers Award 2015 during a 4 months training program @Wipro Technologies, Kolkata
 			</p>
 			<p>
-				The Best Outgoing Student Award, 2009 
+				Obtained all India level certificate of excellence in National Creative Aptitude Test, 2014 @Indian Institute of Technologies, Delhi
+			</p><br>
+			<i>@Activities</i>
+			<p>Volunteer of Association for Computing Machinery at the University of Cincinnati</p>
+			<p>
+				Organized Virtual Gaming Workshop at Abhiyanth’15, a Technical Fest by RGUKT RKValley, March’15
 			</p>
+			<p>Initiated and organized RKV FM 98.2 for the first time at university, to announce all the updates of Abhiyanth’15, 
+			Technical Fest by RGUKT RKValley, March’15</p>
+			<p>Active member of Robotics Club, RGUKT RKV, 2013-2015</p>
 		</div>
 	</div>
 	<div id="contact">
 		<h2>CONTACT ME</h2>
-		<div style="text-align: center; line-height:2em">
+		<div style="line-height:2em; margin : 0px 175px 25px 175px; font-size:20px; text-align:center">
 			<div class="address">
 				<p class="contact-address">
-					3227 Bishop Street<br>
+					3227 Bishop Street, #2<br>
 					Cincinnati, Ohio 45220<br>
 					USA<br><br>
 				</p>
