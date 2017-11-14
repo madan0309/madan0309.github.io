@@ -4,7 +4,7 @@
 		<title>Madan Mohan Portfolio</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="project/css/portfolio.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC|Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Vollkorn+SC|Playfair+Display|Source+Sans+Pro|Caudex" rel="stylesheet">
 		<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -42,44 +42,65 @@
 	<div id="about">
 		<h2>INTRODUCTION</h2>
 		<div style="position:relative;">
-			<img style="height:600px; width:100%; margin:0% 0%; opacity:1;"src="project/images/Intro.png";>
+			<img style="height:600px; width:100%; margin:0% 0%; opacity:1;"src="project/images/about.png";>
 			<div class="intro" style="position:absolute; left:0px; bottom:0px;
 			font-size : 20px; text-align:justify; color:#eee; font-weight:normal;
-			">Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python.
+			">I'm an experienced professional in the field of Python Development. My work is focused on producing quality work and 
+			making a significant impact
+			I’m happy to apply the experience and skills I’ve obtained in my career in order to 
+			manage projects through creative problem solving and innovative thinking. 
+			I possess a strong eye for detail and can thrive independently as well as in a team environment.
 			</div>
 		</div>
-		<div>
-		<p class="intro">
-			Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python. Graduating in Computer Science at the University of Cincinnati.
-Exposure to Web-development in Django, Python.
-		</p>
+		<div class="cover-statement">
+				<img src="project/images/cover.png" style="height:300px ;width:400px; position:absolute; left:0px; right:90px;">
+				<p style="position:absolute;left:590px; text-align:center; font-size:25px; font-weight:bold; font-family:Caudex,sans-serif; color:#000;">
+				COVER STATEMENT</p>
+				<p class="cover-statement-text">
+					Enthusiastic and dedicated, I’m seeking a project or position where I can grow, develop, and make an impact. 
+					With a strong skill set and relevant experience, 
+					I believe I can bring creative ideas and successful solutions to the table. 
+					Take a look through my CV site to find out more about what 
+					I have to offer - or get in touch to discuss how I can help you on your next project.
+				</p>
+			</div>
 		</div>
 	</div>
 	<div id="experience">
 		<h2>WORK EXPERIENCE</h2>
 		<div style="">
-			<img style="height:500px; width:75%; margin:0% 12.5%" src="project/images/experience.png">
+			<img style="height:500px; width:75%; margin:0% 12.5% 4% 12.5%" src="project/images/experience.png">
 		</div>
-		<div style="width:75%; margin:0% 12.5%">
-			<p style="text-align: justify; line-height:1.5em">
-				Graduating in Computer Science at the University of Cincinnati. 
-I have 2 years of industrial experience working with Wipro Technologies, expertized in automation (GUI & REST API) 
-Achieved Toppers Award, 2015 during my 4 months training program at Wipro, Kolkata.
-Exposure to Web-development in Django, Python.
-Skills: Python, Selenium, Django, Core Java, Docker, Jenkins, and Gerrit.
+		<div style="width:75%; margin:10px 12.5%;">
+			<div class="company">
+				<pubtit style="margin-left:5px;">Wipro Technologies</pubtit>
+				<img src="project/images/wipro.png" style="height:200px ;width:200px; position:absolute; left:0px; top:50px;">
+				<ul class="company-experience">
+					<li>Developed automation test suites to perform regression testing on 
+					web-application using selenium Web-driver tool in Python</li>
+					<li>Implemented REST API automation scripts in Python for High Availability cluster project</li>
+					<li>Experience using Docker tool to simulate hundreds of Network Elements</li>
+					<li>Continuous integration with Jenkins to run and generate report for regression testing</li>
+					<li><i>Achieved Toppers Award, in a four month training program</i></li>
+					<li>Exposure to Agile and Scrum methodologies</li>
+				</ul>
+			</div>
+			
+			<div class="company" style="height : 200px">
+				<pubtit style="margin-left:5px;">Relgo Networks Pvt Ltd</pubtit>
+				<img src="project/images/relgo.png" style="height:100px;width:200px; position:absolute; left:0px; top:50px">
+				<ul class="company-experience">
+					<li>Developed RFID-based security system using raspberry-pi to control employee attendance 
+					and door-lock security of the company</li>
+				</ul>
+			</div>
+			<p style="text-align: justify; line-height:1.5em; font-size:19px">
 			</p>
 		</div>
 	</div>
-	<div id="skills" style="line-height:2em; margin : 0px 175px 25px 175px; font-size:20px; text-align:justify;">
+	<div id="skills" style="line-height:1.5em; margin : 0px 175px 25px 175px; font-size:20px; text-align:justify;">
 		<h2>SKILLS</h2>
-		<table style="">
+		<table style="width:100%">
 			<tr>
 				<td style="margin-right:50px"><i>Programming Languages : </i></td>
 				<td><p>Python, Java, C, Unix, Tcl/Tk, Embedded C</p></td>
@@ -103,7 +124,7 @@ Skills: Python, Selenium, Django, Core Java, Docker, Jenkins, and Gerrit.
 		<h2>PROJECTS</h2>
 		<div class="project-block">
 			<div class="project-block-inside">
-				<pubtit>Sentiment Analysis in Twitter</pubtit>
+				<pubtit>Sentiment Analysis in Twitter (Ongoing)</pubtit>
 				<p>
 					<img src="project/images/twittersentiment.png" class="img-responsive" width="150px" style="float:left">
 				</p>
