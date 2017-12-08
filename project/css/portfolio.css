@@ -17,6 +17,18 @@ nav {
 	text-transform : uppercase; font-size : 20px; 
 	
 }
+
+@media screen and (max-width: 1000px) {
+  .top-bar-right ul li  a {display: none;}
+}
+
+@media screen and (max-width: 1000px) {
+	.cover-statement-text {display : none;}
+}
+
+.active {
+    color: white;
+}
 .top-bar-right {
 	float : right;
 	width : 700px;
