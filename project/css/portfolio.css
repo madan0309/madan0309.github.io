@@ -1,7 +1,7 @@
 body {
 	background-color : #fff;
 	font-family : "Roboto", "Tondo", Arial, "Helvetica Neue", Helvetica, sans-serif;
-	margin : 0px; height : 1000px; color : #4b504e;
+	margin :0% 0%; color : #4b504e;
 }
 nav {
 	position : fixed;
@@ -24,7 +24,7 @@ nav {
 }
 
 .nav-bar-right li {
-	display : inline-block;
+	display : inline-block; 	
 	font-size : 20px; margin-right:5px; font-variant : small-caps;
 }
 .info:hover {
@@ -48,6 +48,7 @@ h2 {
 	margin-top : 60px;
 	padding-top: 50px;
 	background : transparent;
+	min-width : 1000px;
 }
 
 .company-experience{
@@ -117,9 +118,10 @@ pubtit {
 }
 
 footer {
-	font-family : "Vollkorn+SC"; background-color : #262527;
-	padding : 20px; color : #fafafa; font-size : 20px; font-weight : bold;
+	margin :0% 0%;
+	left : 0; bottom : 0px; width : 100%;
+	font-family : "Vollkorn+SC"; background-color : #262527; width:100%; padding-bottom:2%;
+	color : #fafafa; font-size : 20px; font-weight : bold;
 	cursor : pointer;
-	letter-spacing : 0.8px; word-spacing : 5px;
-	border-top-width : 2px; border-top-color : #ccc; border-top-style: solid;
+	letter-spacing : 0.8px; word-spacing : 5px; border-top-color : #ccc; border-top-style: solid;
 }
